@@ -22,7 +22,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="bg-slate-200">
+      <body className="bg-slate-800">
         <ChakraProvider>
           <Outlet />
           <ScrollRestoration />
