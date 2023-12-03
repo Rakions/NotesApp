@@ -1,4 +1,3 @@
-import { cssBundleHref } from "@remix-run/css-bundle";
 import stylesheet from "./tailwind.css";
 
 import {
@@ -10,9 +9,7 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 
-export const links = () => [
-  ...(cssBundleHref ? [{ rel: "stylesheet", href: stylesheet }] : []),
-];
+export const links = () => [{ rel: "stylesheet", href: stylesheet }];
 
 export default function App() {
   return (
@@ -32,3 +29,4 @@ export default function App() {
     </html>
   );
 }
+
