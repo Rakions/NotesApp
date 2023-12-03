@@ -1,5 +1,4 @@
 import { Link } from '@remix-run/react';
-import imageIndex from '../../public/assets/undraw_note_list_re_r4u9.svg'
 
 export const meta = () => {
   return [{ title: "New Remix App" }];
@@ -8,19 +7,14 @@ export const meta = () => {
 export default function Index() {
   return (
     <>
-      <div className="flex w-full max-w-[1000px] mx-auto my-0 h-screen items-center justify-center">
-        <div className="flex flex-col items-center justify-center gap-4 w-full md:w-1/2">
-          <div className="text-center">
-            <h1 className="text-indigo-500 text-5xl md:text-6xl font-semibold ">EASY NOTES</h1>
-            <p className="text-xl">All your notes in one place</p>
-          </div>
-          <div className="flex gap-4">
-            <button className="bg-indigo-500 text-white px-4 py-1 rounded-lg hover:bg-indigo-600 transition duration-300"><Link to={'/login'}>Log In</Link> </button>
-            <button className="border border-indigo-500  px-4 py-1 rounded-lg">Sign Up</button>
-          </div>
+      <div className="flex w-full max-w-[1000px] mx-auto my-0 h-screen items-center justify-center flex-col gap-8 p-4 ">
+        <div className='max-w-[700px] flex flex-col items-center justify-center gap-4 text-center'>
+          <h1 className='font-semibold text-5xl md:text-[4rem] xl:text-[6rem] text-teal-300'>EASY NOTES</h1>
+          <p className='text-md md:text-lg xl:text-xl font-semibold text-gray-400 '>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis necessitatibus eligendi culpa alias placeat numquam, impedit, nobis possimus ratione sint commodi beatae cum architecto adipisci! Amet quisquam magnam ad praesentium.</p>
         </div>
-        <div className="flex-col items-center justify-center gap-4 w-full md:w-1/2 hidden md:flex">
-          <img src={imageIndex} alt="" className='w-full h-full max-w-[700px]' />
+        <div className='flex gap-8'>
+          <button className='px-8 py-2  bg-teal-300 font-semibold rounded-lg hover:bg-teal-400 transition duration-200'>SIGN UP</button>
+          <button className='px-8 py-2 bg-slate-500 font-semibold rounded-lg'>LOG IN</button>
         </div>
       </div>
     </>

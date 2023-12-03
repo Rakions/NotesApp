@@ -22,7 +22,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="bg-slate-200">
+      <body className="bg-slate-800">
         <ChakraProvider>
           <div className="w-full max-w-[1000px] mx-auto my-0">
             <Outlet />
