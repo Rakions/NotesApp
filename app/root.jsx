@@ -24,13 +24,15 @@ export default function App() {
       </head>
       <body className="bg-slate-200">
         <ChakraProvider>
-          <Outlet />
-          <ScrollRestoration />
-          <Scripts />
-          <LiveReload />
+          <div className="w-full max-w-[1000px] mx-auto my-0">
+            <Outlet />
+            <ScrollRestoration />
+            <Scripts />
+            <LiveReload />
+          </div>
         </ChakraProvider>
       </body>
-    </html>
+    </html >
   );
 }
 
