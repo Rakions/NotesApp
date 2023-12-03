@@ -1,4 +1,5 @@
 import stylesheet from "./tailwind.css";
+import { ChakraProvider } from '@chakra-ui/react'
 
 import {
   Links,
@@ -13,6 +14,7 @@ export const links = () => [{ rel: "stylesheet", href: stylesheet }];
 
 export default function App() {
   return (
+
     <html lang="en">
       <head>
         <meta charSet="utf-8" />
@@ -20,11 +22,13 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
-        <Outlet />
-        <ScrollRestoration />
-        <Scripts />
-        <LiveReload />
+      <body className="bg-slate-200">
+        <ChakraProvider>
+          <Outlet />
+          <ScrollRestoration />
+          <Scripts />
+          <LiveReload />
+        </ChakraProvider>
       </body>
     </html>
   );
