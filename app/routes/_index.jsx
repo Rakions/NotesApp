@@ -13,8 +13,8 @@ export default function Index() {
           <p className='text-md md:text-lg xl:text-xl font-semibold text-gray-400 '>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis necessitatibus eligendi culpa alias placeat numquam, impedit, nobis possimus ratione sint commodi beatae cum architecto adipisci! Amet quisquam magnam ad praesentium.</p>
         </div>
         <div className='flex gap-8'>
-          <button className='px-8 py-2  bg-teal-300 font-semibold rounded-lg hover:bg-teal-400 transition duration-200'>SIGN UP</button>
-          <button className='px-8 py-2 bg-slate-500 font-semibold rounded-lg'>LOG IN</button>
+          <button className='px-8 py-2  bg-teal-300 font-semibold rounded-lg hover:bg-teal-400 transition duration-200'><Link to={'/signup'}>SIGN UP</Link></button>
+          <button className='px-8 py-2 bg-slate-500 font-semibold rounded-lg'><Link to={'/login'}>LOG IN</Link></button>
         </div>
       </div>
     </>
